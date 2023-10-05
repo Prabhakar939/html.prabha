@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <style>
+        body{
+            background-color: rgb(62, 185, 213);
+            text-align: center;
+        
+            
+            
+        }
+        h1{
+            color:rgb(24, 12, 154)
+        }
+        .anki{
+            color: red;
+        }
+        .ankitha{
+            color:red;
+
+        }
+        .shiva{
+            color: rgb(241, 237, 17);
+        }
+        .satyam{
+            color:rgb(241, 237, 17);
+        }
+        button{
+            color:black;
+            background-color:orange;
+            
+        }
+        input{
+            background-color:rgb(231, 213, 213);
+        }
+    </style>
+        <script>
+            
+    function pg()
+    {
+        window.alert("this page says percent and grade.")
+        document.getElementById("perc").value= document.getElementById("om").value/ document.getElementById("mm").value*100
+        var percentage=document.getElementById("perc").value;
+        
+        var g;
+       
+        switch(Math.floor(percentage/10))
+        {
+            
+            case 9:
+                
+                g="outstanding";
+                break;
+            case 8:
+                g="outstanding";
+                break;
+                case 7:
+                g="A";
+                break;
+                case 6:
+                    g="A";
+                    break;
+                    case 5:
+                        g="b";
+                        break;
+                        case 4:
+                            g="c";
+                            break;
+                            case 3:
+                                g="d";
+                                break;
+                                case 2:
+                                    g="f";
+                                    break;
+                                    case 1:
+                                        g="f";
+                                        break;
+                                        default:
+                                            g="f";
+                                            break;
+
+
+                                           
+        }
+
+        
+ 
+        document.getElementById("grade").value=g;
+
+    }
+    
+    window.alert("this page says percent and grade.") 
+
+    
+</script>
+</head>
+<body>
+<h1>FIND PERCENTAGE AND GRADE BY USING JAVASCRIPT</h1>
+<h2 class="anki">Enter obtained marks:<input type="text" id="om"><br><br></h2>
+<h2 class="ankitha">Enter maximum marks:<input type="text" id="mm"><br><br></h2>
+<button type="button" onclick="pg()">submit</button><br><br></h2>
+ <h2 class="shiva">percent:<input type="text" id="perc"></h2>
+<h2 class="satyam">grade:<input type="text" id="grade"></h2>
+</body>
+</html>
+
